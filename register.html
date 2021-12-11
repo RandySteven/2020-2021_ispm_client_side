@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+    <!-- name, email, password, gender, dob, address -->
+        <div class="register-box">
+            <h2 class="title">Register</h2>
+            <form action="login.html" method="get">
+                <table class="register-table">
+                    <tr>
+                        <td>
+                            <label for="name">
+                                Name
+                            </label>
+                        </td>
+                        <td><input type="text" name="name" id="name"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="nim">
+                                NIM
+                            </label>
+                        </td>
+                        <td><input type="text" name="nim" id="nim"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="jurusan">
+                                Jurusan
+                            </label>
+                        </td>
+                        <td>
+                            <select name="jurusan" id="jurusan">
+                                <option value="Sistem Informasi">Sistem Informasi</option>
+                                <option value="Sistem Informasi Manajemen">Sistem Informasi Manajemen</option>
+                                <option value="Sistem Informasi Audit">Sistem Informasi Audit</option>
+                                <option value="Sistem Informasi Akuntansi">Sistem Informasi Akuntan</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="email">
+                                Email
+                            </label>
+                        </td>
+                        <td>
+                            <input type="email" name="email" id="email">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="password">
+                                Password
+                            </label>
+                        </td>
+                        <td>
+                            <input type="password" name="password" id="password">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Gender
+                        </td>
+                        <td>
+                            <label for="male">
+                                Male
+                            </label>
+                            <input type="radio" name="gender" id="male" value="male">
+                            
+                            <label for="female">
+                                Female
+                            </label>
+                            <input type="radio" name="gender" id="female" value="female">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="date">
+                                Date of Birth
+                            </label>
+                        </td>
+                        <td>
+                            <input type="date" name="date" id="date">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for=address>
+                                Address
+                            </label>
+                        </td>
+                        <td>
+                            <textarea name=address id=address cols="30" rows="10"></textarea>
+                        </td>
+                    </tr>
+                </table>
+                <button type="submit" class="button-submit btn-blue text-white">Register</button>
+            </form> 
+        </div>
+    </div>
+</body>
+</html>
